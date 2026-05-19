@@ -2,6 +2,7 @@ package selenium.class_one;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class SauceDemoLoginCssSelectorTest {
@@ -14,7 +15,10 @@ public class SauceDemoLoginCssSelectorTest {
         driver.get("https://www.saucedemo.com/");
         driver.manage().window().maximize();
 
-        driver.findElement(By.cssSelector("#user-name")).sendKeys("standard_user");
+        WebElement element=driver.findElement(By.cssSelector("#user-name"));
+        element.clear();
+        element.sendKeys("standard_user");
+
         Thread.sleep(2000);
         driver.findElement(By.cssSelector("#password")).sendKeys("secret_sauce");
         Thread.sleep(2000);
