@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="/home/jannat-mugdho/gitHubProjects/batches/batch15/SeleniumWebBatch15">
+        <classes>
+           <class name="selenium.testng_one.BasicTest"></class>
+           <class name="selenium.testng_one.SauceDemoLoginClassTest"></class>
+           <class name="selenium.testng_one.SauceDemoLoginHeadlessTest"></class>
+           <class name="selenium.testng_one.SauceDemoLoginMethodTest"></class>
+           <class name="selenium.testng_one.SauceDemoLoginTest"></class>
+        </classes>
+    </test>
+</suite>
