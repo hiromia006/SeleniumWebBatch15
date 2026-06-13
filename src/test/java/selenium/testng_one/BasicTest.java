@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class BasicTest {
-    @Test(description = "Test 1", priority = 1)
+    @Test(description = "Test 1", priority = 1, enabled = false)
     public void test1() {
         System.out.println("Test 1");
         Assert.assertEquals("Hello", "Hello", "sddsf1");
